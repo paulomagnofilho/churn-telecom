@@ -1,0 +1,7 @@
+etc/
+Include/
+install/
+Lib/
+Scripts/
+share/
+*.cfg
