@@ -1,4 +1,4 @@
-# 📡 Previsão de Churn em Telecomunicações
+# Previsão de Churn em Telecomunicações
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9%2B-blue?logo=python" />
@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 
 > **Cenário:** Uma operadora de telecomunicações fictícia, a **TeleConnect Brasil**, enfrenta uma taxa de cancelamento (churn) de **26,5%** ao mês — bem acima da média setorial de 18%. Cada cliente perdido representa uma perda média de **R$ 65/mês** em receita recorrente. O time de Data Science foi acionado para identificar quais clientes estão prestes a cancelar, com antecedência suficiente para que o time comercial aja.
 
@@ -17,7 +17,7 @@ Este projeto apresenta um pipeline completo de Ciência de Dados — do tratamen
 
 ---
 
-## ❓ Perguntas de Negócio
+## Perguntas de Negócio
 
 | # | Pergunta | Respondida em |
 |---|----------|---------------|
@@ -27,15 +27,15 @@ Este projeto apresenta um pipeline completo de Ciência de Dados — do tratamen
 
 ---
 
-## 🗂️ Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 churn-telecom/
 │
 ├── notebooks/
-│   └── analise_churn_telecom.py      # Script principal comentado (ETL → EDA → ML → Conclusão)
+│   └── analise_churn_telecom.py      # código principal comentado (ETL → EDA → ML → Conclusão)
 │
-├── outputs/                          # Gráficos gerados automaticamente
+├── outputs/                          # Gráficos de análise
 │   ├── 01_distribuicao_churn.png
 │   ├── 02_churn_por_contrato.png
 │   ├── 03_tenure_distribuicao.png
@@ -46,7 +46,7 @@ churn-telecom/
 │   └── 08_shap_values.png
 │
 ├── src/
-│   └── utils.py                      # Funções auxiliares reutilizáveis
+│   └── utils.py                      # Funções auxiliares
 │
 ├── requirements.txt
 └── README.md
@@ -54,7 +54,7 @@ churn-telecom/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 | Campo | Valor |
 |-------|-------|
@@ -79,7 +79,7 @@ churn-telecom/
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Categoria | Ferramentas |
 |-----------|-------------|
@@ -93,7 +93,7 @@ churn-telecom/
 
 ---
 
-## ⚙️ Como Rodar o Projeto
+## Como Rodar o Projeto
 
 ### 1. Clone o repositório
 ```bash
@@ -133,7 +133,7 @@ unzip telco-customer-churn.zip -d data/
 
 ---
 
-## 📈 Fluxo da Solução
+## Fluxo da Solução
 
 ```
 Dados Brutos (CSV)
@@ -163,7 +163,7 @@ Dados Brutos (CSV)
  │  Comparação de Modelos (CV 5-fold AUC)   │
  │  • Logistic Regression                   │
  │  • Random Forest                         │
- │  • Gradient Boosting  ← 🏆 Vencedor      │
+ │  • Gradient Boosting  ← Vencedor      │
  └──────┬───────────────────────────────────┘
         │
         ▼
@@ -177,7 +177,7 @@ Dados Brutos (CSV)
 
 ---
 
-## 🏆 Resultados do Modelo
+## Resultados do Modelo
 
 | Modelo | AUC-ROC (CV) |
 |--------|-------------|
@@ -194,7 +194,7 @@ Dados Brutos (CSV)
 
 ---
 
-## 💡 Principais Insights
+## Principais Insights
 
 ### 1. Tipo de Contrato é o Maior Predictor
 > Clientes com contratos **mensais** apresentam taxa de churn **~4× maior** do que clientes com contratos de 2 anos. Incentivar a migração para planos anuais é a ação de retenção de maior impacto.
@@ -213,31 +213,17 @@ Dados Brutos (CSV)
 
 ---
 
-## 🔮 Próximos Passos
+## Autor
 
-- [ ] Deployar o modelo como API REST com FastAPI
-- [ ] Criar dashboard interativo com Streamlit
-- [ ] Implementar retreinamento automático mensal
-- [ ] Integrar com CRM para scoring em tempo real
-- [ ] Testar modelos de deep learning (TabNet, NODE)
-
----
-
-## 👤 Autor
-
-**[Seu Nome]**
-- LinkedIn: [linkedin.com/in/seu-perfil](https://linkedin.com/in/seu-perfil)
-- GitHub: [github.com/seu-usuario](https://github.com/seu-usuario)
-- E-mail: seuemail@email.com
+**Paulo Magno**
+- LinkedIn: [linkedin.com/in/seu-perfil](https://www.linkedin.com/in/paulomagnofilho/)
+- GitHub: [github.com/seu-usuario](https://github.com/paulomagnofilho)
+- E-mail: pmagno15@email.com
 
 ---
-
-## 📄 Licença
-
-Distribuído sob a licença MIT. Consulte `LICENSE` para mais informações.
 
 ---
 
 <p align="center">
-  Feito com 🐍 Python e ☕ muito café
+  Feito com 🐍 Python e muito café
 </p>
